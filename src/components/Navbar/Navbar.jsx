@@ -1,7 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
     const name = <>
-        <li><a>Home</a></li>
-        <li><a>Listed Book</a></li>
+        <NavLink to={`/`}><li><a>Home</a></li></NavLink>
+        <NavLink to={`/listed-book`}><li><a>Listed Book</a></li></NavLink>
         <li><a>Page to Read</a></li>
     </>
     return(

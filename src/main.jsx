@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './components/Root/Root.jsx'
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx'
 import Home from './components/Home/Home.jsx'
+import ListedBook from './components/ListedBook/ListedBook.jsx'
+import Dashboard from './components/Dashboard/Dashboard.jsx'
 
 let router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ let router = createBrowserRouter([
       {
         path: '/',
         element: <Home/>
+      },
+      {
+        path: '/listed-book',
+        element: <ListedBook/>
+      },
+      {
+        path: '/dashboard',
+        element: <Dashboard/>
       }
     ]
   },
