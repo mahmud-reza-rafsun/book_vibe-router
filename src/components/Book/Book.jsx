@@ -1,3 +1,4 @@
+import { CiStar } from "react-icons/ci";
 const Book = ({book}) =>{
     const {bookName, author, image, 
             review, totalPages,
@@ -5,22 +6,31 @@ const Book = ({book}) =>{
             tags, publisher,
             yearOfPublishing} = book;
     return(
-        <div className="card bg-base-100 py-6 shadow-lg">
-            <figure>
+        <div className="card bg-base-100 py-5 shadow-lg px-6">
+            <figure className="bg-gray-100 rounded-lg py-6">
                 <img 
-                className="w-32 rounded-md"
+                className="w-32 h-52 rounded-md"
                 src={image}
                 alt="Shoes" />
             </figure>
-            <div className="card-body">
-                <h2 className="card-title">
-                Card Title
-                <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
+            <div className="">
+                <div className="flex gap-3 py-4">
+                    <div className="badge badge-outline">Fashion</div>
+                    <div className="badge badge-outline">Products</div>
+                </div>
+                <h2 className="card-title pb-2"> {bookName}</h2>
+                <div className="text-sm space-y-1 flex flex-col pb-3">
+                    <p>By <span className="border-dotted border-b border-gray-400">{author}</span></p>
+                    <p>Page: {totalPages}</p>
+                    <p>Publisher: <span className="font-semibold text-sm">{publisher}</span></p>
+                    <p>Publish Date: <span className="font-semibold text-sm">{yearOfPublishing}</span></p>
+                </div>
+                <div className="flex justify-between items-center border-t border-dashed border-gray-400 pt-3 text-sm">
+                    <div className="font-semibold">{category}</div>
+                    <div className="flex justify-center items-center gap-2">
+                        <div>{rating}</div>
+                        <CiStar className="text-xl" />
+                    </div>
                 </div>
             </div>
         </div>
