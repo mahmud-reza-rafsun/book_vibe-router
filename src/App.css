@@ -4,3 +4,14 @@
 *{
     font-family: "Work Sans", serif;
 }
+
+.active{
+    border: 1.5px solid #2ce70f;
+    border-radius: 5px;
+}
+/* Add this to your global CSS file */
+.daisy-nav a:hover {
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: inherit !important;
+  }

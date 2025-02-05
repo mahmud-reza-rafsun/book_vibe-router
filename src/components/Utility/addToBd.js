@@ -1,4 +1,4 @@
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const getStoredReadList = () => {
     const storedListStr = localStorage.getItem('read-list');
@@ -44,7 +44,8 @@ const addToStoredWishList = (id) =>{
         storedWish.push(id);
         const storedWishStr = JSON.stringify(storedWish);
         localStorage.setItem('wish-list', storedWishStr);
+        toast('book added')
     }
 }
 
-export {addToStoredReadList, addToStoredWishList, getStoredReadList}
+export {addToStoredReadList, addToStoredWishList, getStoredReadList, getStoredWishList}

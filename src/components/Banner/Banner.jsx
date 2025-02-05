@@ -8,7 +8,7 @@ const Banner = () => {
                 className="sm:max-w-xs md:max-w-sm lg:max-w-lg rounded-lg shadow-2xl" />
                 <div>
                 <h1 className="text-3xl lg:text-5xl font-semibold">Books to freshen up your bookshelf</h1>
-                <button className="btn btn-success mt-4 lg:mt-8">View The List</button>
+                <button className="btn btn-success mt-4 lg:mt-8 text-white">View The List</button>
                 </div>
             </div>
         </div>

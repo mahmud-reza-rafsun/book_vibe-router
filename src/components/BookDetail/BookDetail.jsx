@@ -25,7 +25,7 @@ const {bookId} = useParams();
         <div className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row gap-7">
                 <img
-                className="h-[500px] rounded-md"
+                className="h-[350px] lg:h-[500px] rounded-md"
                 src={image} />
                 <div>
                     <h2 className="card-title"> {bookName}</h2>

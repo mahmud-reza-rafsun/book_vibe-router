@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Book from "../Book/Book";
 
-const Books = () =>{
+const Books = ({removeButton}) =>{
     const [books, setBooks] = useState([]);
     useEffect(() =>{
         fetch('booksData.json')

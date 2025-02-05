@@ -2,7 +2,7 @@ import { CiStar } from "react-icons/ci";
 import { Link } from "react-router-dom";
 const Book = ({book}) =>{
     const {bookName, author, image, 
-            review, totalPages, bookId,
+            totalPages, bookId,
             rating, category,
             tags, publisher,
             yearOfPublishing} = book;
